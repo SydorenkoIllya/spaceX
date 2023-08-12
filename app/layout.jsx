@@ -14,9 +14,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Header>
-          <title>
+      <Head>
+      <title>
             Content
           </title>
         <meta
@@ -32,7 +31,9 @@ export default function RootLayout({ children }) {
           property="og:image"
           content="anylink"
         />
-        </Header>
+      </Head>
+      <body>
+        <Header/>
         <main>{children}</main>
         <Footer/>
       </body>
